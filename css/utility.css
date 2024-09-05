@@ -1,0 +1,335 @@
+/* Flexbox container for layout */
+.bigcontainer {
+    display: flex;
+    /* Adjust the gap between the sidebar and the container */
+  
+    /* Adjust the margin as needed */
+    background-color: #f9f9f9;
+ 
+}
+.bigcontainer .flexbox{
+    margin-bottom: 200px;
+}
+
+.filter-dropdown {
+    background-color: red;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 300px;
+    /* Increase the width */
+    font-size: 16px;
+    /* Increase font size for better readability */
+    padding: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    /* Increase padding for better spacing */
+    background-color: #f9f9f9;
+    /* Light gray background */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 20px;
+    /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Slightly stronger shadow for depth */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth animation */
+}
+
+/* Sidebar hover effect */
+.sidebar:hover {
+    transform: translateY(-5px);
+    /* Move the sidebar slightly up on hover */
+}
+
+/* Sidebar item styles */
+.sidebar-item {
+    margin-top: 32px;
+    /* Increase margin between items */
+    font-family: 'Quicksand', "Open Sans", sans-serif;
+    color: #333;
+    /* Darker text color for better contrast */
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    /* Slightly reduce font weight */
+    line-height: 24px;
+    /* Increase line height for better spacing */
+    align-items: center;
+}
+
+/* Sidebar title styles */
+.sidebar-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    /* Increase title font weight */
+}
+
+/* Sidebar count styles */
+.sidebar-count {
+    margin: -4px -4px -5px auto;
+    color: #6c63ff;
+    /* Custom color for count */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    /* Increase line height */
+    min-width: 1.5em;
+    /* Adjust min-width for better sizing */
+    text-align: center;
+    border-radius: 50%;
+    /* Circular count badge */
+    padding: 8px;
+    /* Increase padding for better spacing */
+    display: inline-block;
+    /* Display as inline element */
+}
+
+
+
+
+/* Card container styles */
+.my-2 {
+   
+    height: 310px;
+    /* Increase height for better presence */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #f0f0f0;
+    /* Light border color */
+    text-align: center;
+    width: calc(20% - 20px);
+    /* Adjusted width for five cards in a row */
+    flex: 0 0 calc(20% - 20px);
+    /* Adjusted flex basis */
+    max-width: calc(20% - 20px);
+    transition: border-color 0.2s ease;
+    /* Added transition for smooth effect */
+    margin-bottom: 20px;
+    /* Add margin to create space between product cards */
+    margin-right: 20px;
+    /* Add margin to create space between product cards */
+    display: flex;
+    /* Ensure content is displayed as flex */
+    flex-direction: column;
+    /* Set flex direction to column */
+    justify-content: space-between;
+    /* Center content vertically */
+    border-radius: 10px;
+    /* Rounded corners */
+    background: linear-gradient(135deg, #ffffff, #e6e6e6);
+    /* Background gradient */
+    padding: 20px;
+    /* Add padding for spacing */
+   
+}
+
+/* Hover styles */
+.my-2:hover {
+    box-shadow: 0 0 20px #b4f0cd;
+    /* Subtle box shadow */
+}
+
+/* Image styles */
+.my-2 .image {
+    max-width: 100%;
+    max-height: 175px;
+    /* Decrease max-height for better proportion */
+    width: auto;
+    /* Set the width */
+    height: auto;
+    /* Let the height adjust automatically to maintain aspect ratio */
+    flex-shrink: 0;
+    /* Prevent the image from shrinking */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    display: block;
+    /* Ensure the image is treated as a block element */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Add a transition for smooth animation */
+}
+
+/* Hover styles for image */
+.my-2 .image:hover {
+    transform: scale(1.1);
+    /* Zoom up the image slightly when hovered */
+}
+
+/* Title styles */
+.my-2 .card-body .card-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    /* Add padding for better spacing */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    /* Dark text color */
+    background-color: white;
+}
+
+/* Text styles */
+.my-2 .card-body .card-text {
+    padding: 0 20px;
+    /* Add padding for better spacing */
+    font-weight: 500;
+    color: #666;
+    /* Slightly darker than default text color */
+}
+
+/* Button styles */
+.my-2 .card-body a {
+    margin: 20px auto 0;
+    /* Center the button horizontally and add margin */
+    color: #333;
+    /* Dark text color */
+    font-size: 1rem;
+    /* Decrease font size for better proportion */
+    padding: 10px 20px;
+    /* Adjust padding for better spacing */
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    /* Transparent background */
+    border: 2px solid #333;
+    /* Dark border */
+    border-radius: 5px;
+    /* Add border radius */
+    transition: background-color 0.3s, color 0.3s;
+    /* Add transition for smooth effect */
+}
+
+/* Hover styles for button */
+.my-2 .card-body a:hover {
+    background-color: #333;
+    /* Dark background color on hover */
+    color: #fff;
+    /* White text color on hover */
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 1200px) {
+    .my-2 {
+        flex-basis: calc(25% - 20px);
+        /* Adjust the width of each card to fit four cards in a row with spacing for smaller screens */
+        max-width: calc(25% - 20px);
+        /* Ensure each card doesn't exceed one-fourth of the container width */
+    }
+}
+
+@media (max-width: 992px) {
+    .my-2 {
+        flex-basis: calc(33.33% - 20px);
+        /* Adjust the width of each card to fit three cards in a row with spacing for smaller screens */
+        max-width: calc(33.33% - 20px);
+        /* Ensure each card doesn't exceed one-third of the container width */
+    }
+}
+
+@media (max-width: 768px) {
+    .my-2 {
+        flex-basis: calc(50% - 20px);
+        /* Adjust the width of each card to fit two cards in a row with spacing for smaller screens */
+        max-width: calc(50% - 20px);
+        /* Ensure each card doesn't exceed one-half of the container width */
+    }
+}
+
+@media (max-width: 576px) {
+    .my-2 {
+        flex-basis: calc(100% - 20px);
+        /* Adjust the width of each card to fit one card in a row with spacing for smaller screens */
+        max-width: calc(100% - 20px);
+        /* Ensure each card doesn't exceed the container width */
+    }
+}
+
+
+.navbar1 {
+    background-color: var(--green);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 20px 0;
+    /* Add padding for spacing */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.navbar1 span {
+    font-size: 1.5rem;
+    /* Customize font size */
+    font-weight: bold;
+    /* Customize font weight */
+    text-transform: uppercase;
+    /* Transform text to uppercase */
+}
+
+a {
+    text-decoration: none;
+}
+
+.filter {
+    font-size: 2rem;
+    display: inline-block;
+    /* Ensure it behaves as an inline element */
+    margin-right: -200px;
+    /* Adjust this value to decrease the space */
+}
+
+.search-form {
+    display: inline-block;
+    /* Ensure it behaves as an inline element */
+}
+
+/* Add CSS for filter dropdown */
+.header .header-1 .filter {
+    margin-right: 1rem;
+    /* Add spacing between filter and other elements */
+}
+
+.header .header-1 .filter select {
+    font-size: 1.6rem;
+    /* Adjust font size for dropdown */
+    padding: 0.5rem;
+    /* Adjust padding for better appearance */
+}
+
+.userIconDetails {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.userIcon {
+    background-color: var(--green);
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.userIcon:hover {
+    box-shadow: 0 0 8px black;
+}
+
+
+.useridentification {
+    /* font-weight: 200; */
+    font-size: 20px;
+    color: white;
+
+}

@@ -1,0 +1,80 @@
+.review {
+    max-width: 800px; /* Adjust as needed */
+    margin: 10px auto; /* Center the review container */
+    margin-right: calc(50% - 450px); /* 50% of the viewport width minus half of the container width plus 100px */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 16px; /* Increase font size */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 50px;
+}
+
+.review ul {
+    padding: 0;
+}
+
+.review li {
+    margin-bottom: 20px;
+}
+
+/* Align review items */
+.review li span {
+    display: block;
+}
+
+/* Review item styling */
+.review .review-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Change background color */
+}
+
+/* Username styling */
+.review .username {
+    font-weight: bold;
+    color: #333; /* Dark text color */
+}
+
+/* Review form styling */
+.writeReview {
+    text-align: center; /* Align submit button to center */
+}
+
+.writeReview label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.writeReview textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 16px; /* Increase font size */
+    background-color: #f2f2f2; /* Change background color */
+}
+
+.writeReview button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Increase font size */
+}
+
+.writeReview button:hover {
+    background-color: #45a049;
+}
+.submit{
+    display: flex;
+    gap:10px;
+}

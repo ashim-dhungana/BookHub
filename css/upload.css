@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.formContainer {
+    width: 900px;
+    /* Adjust width as needed */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Beautiful box shadow */
+    padding: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+    /* Take up full width */
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 300px;
+}
+
+.form-group input,
+.form-group textarea {
+
+    /* Limit maximum width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* Add spacing between inputs */
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+}
+
+.form-group input[type="file"] {
+    padding: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+    width: 500px;
+}
+
+.form-group input[type="submit"] {
+    margin-top: 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}

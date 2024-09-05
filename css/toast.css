@@ -1,0 +1,30 @@
+#toast-container {
+  position: fixed;
+  top: 30px;
+  right: 45vw;
+  z-index: 9999;
+}
+
+.toast {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.toast.success {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.toast.error {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.toast .icon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+}

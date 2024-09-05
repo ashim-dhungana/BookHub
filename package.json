@@ -1,0 +1,10 @@
+{
+  "name": "bookhub",
+  "version": "0.0.1",
+  "author": "Ashim Dhungana",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "php -S localhost:3000 -t ."
+  }
+}
